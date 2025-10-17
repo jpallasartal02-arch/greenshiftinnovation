@@ -72,11 +72,10 @@ export default function Home() {
             muted
             loop
             playsInline
-            preload="metadata"
-            poster="/assets/hero-poster.jpg"
+            preload="auto"
             aria-hidden="true"
           >
-            <source src="/assets/hero-video.mp4" type="video/mp4" />
+            <source src="/hero-video.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
