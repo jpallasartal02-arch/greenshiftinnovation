@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Green^Shift Climathon-inspired Design System */
+    /* Green^Shift Design System - Green primary */
     --background: 0 0% 100%;
     --foreground: 210 60% 25%;
 
@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 60% 25%;
 
-    /* Vibrant blue primary (Climathon-style) */
-    --primary: 207 83% 57%;
+    /* Fresh green primary */
+    --primary: 158 58% 49%;
     --primary-foreground: 0 0% 100%;
 
     /* Cool gray secondary */
@@ -29,8 +29,8 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 210 15% 50%;
 
-    /* Fresh green accent */
-    --accent: 158 58% 45%;
+    /* Vibrant teal accent */
+    --accent: 174 62% 47%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,7 +38,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 207 83% 57%;
+    --ring: 158 58% 49%;
 
     --radius: 0.5rem;
 
