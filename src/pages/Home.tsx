@@ -76,7 +76,7 @@ export default function Home() {
             poster="/assets/hero-poster.jpg"
             aria-hidden="true"
           >
-            <source src="https://drive.google.com/uc?export=download&id=1p1hXGE_1SWKS9hlFAnAn-B4Dw1lCZYpb" type="video/mp4" />
+            <source src="/assets/hero-video.mp4" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
