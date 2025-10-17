@@ -57,11 +57,6 @@ export default function Proceso() {
           <div className="max-w-4xl mx-auto space-y-12">
             {steps.map((step, index) => (
               <div key={index} className="relative">
-                {/* Connector line (except for last item) */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute left-10 top-24 w-0.5 h-12 bg-border"></div>
-                )}
-                
                 <Card className="border-border hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
                     <div className="flex flex-col md:flex-row gap-6">
@@ -100,8 +95,19 @@ export default function Proceso() {
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
             Sin coste ni compromiso. Descubre cómo una dinámica de innovación abierta puede acelerar tus objetivos.
           </p>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90">
-            <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90"
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).Calendly) {
+                (window as any).Calendly.initPopupWidget({ 
+                  url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
+                });
+              }
+            }}
+          >
+            Solicitar auditoría gratuita
           </Button>
         </div>
       </section>

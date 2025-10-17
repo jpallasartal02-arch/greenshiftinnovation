@@ -179,8 +179,19 @@ export default function Servicios() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Explorar mi caso
           </h2>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90">
-            <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90"
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).Calendly) {
+                (window as any).Calendly.initPopupWidget({ 
+                  url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
+                });
+              }
+            }}
+          >
+            Solicitar auditoría gratuita
           </Button>
         </div>
       </section>

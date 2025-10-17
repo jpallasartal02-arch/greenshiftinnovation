@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div>
-            <Link to="/" className="text-xl font-bold text-primary mb-4 inline-block">
+            <Link to="/" className="text-xl font-bold mb-4 inline-block" style={{ color: '#37B884' }}>
               Green<sup className="text-sm">Shift</sup>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">

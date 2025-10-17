@@ -1,7 +1,7 @@
 // Global constants for easy editing
 export const SITE_CONFIG = {
   calendlyUrl: "https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1",
-  primaryColor: "#1E88E5",
+  primaryColor: "#37B884",
   formEndpoint: "#", // Cambiar al endpoint real (EmailJS, FormSubmit, etc.)
   linkedinUrl: "https://www.linkedin.com/company/greenshift",
   companyName: "Green^Shift",
@@ -16,7 +16,6 @@ export const NAVIGATION_LINKS = [
   { name: "Quiénes Somos", href: "/quienes-somos" },
   { name: "Servicios", href: "/servicios" },
   { name: "Proceso", href: "/proceso" },
-  { name: "Auditoría Gratuita", href: "/auditoria-gratuita" },
   { name: "Contacto", href: "/contacto" },
 ] as const;
 

@@ -58,7 +58,6 @@ export default function Home() {
     "Partner 3",
     "Partner 4",
     "Partner 5",
-    "Partner 6",
   ];
 
   return (
@@ -75,8 +74,14 @@ export default function Home() {
                 Definimos retos, facilitamos equipos y entregamos prototipos accionables en días, no meses.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button asChild size="lg">
-                  <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>
+                <Button size="lg" onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).Calendly) {
+                    (window as any).Calendly.initPopupWidget({ 
+                      url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
+                    });
+                  }
+                }}>
+                  Solicitar auditoría gratuita
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/servicios">Ver servicios</Link>
@@ -177,7 +182,7 @@ export default function Home() {
               Empresas con las que hemos colaborado
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-5xl mx-auto items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-5xl mx-auto items-center">
             {partners.map((partner, index) => (
               <div
                 key={index}
@@ -196,8 +201,19 @@ export default function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Explora si una dinámica de innovación abierta encaja en tus objetivos empresariales
           </h2>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90">
-            <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90"
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).Calendly) {
+                (window as any).Calendly.initPopupWidget({ 
+                  url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
+                });
+              }
+            }}
+          >
+            Solicitar auditoría gratuita
           </Button>
         </div>
       </section>
