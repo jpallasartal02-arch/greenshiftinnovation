@@ -74,10 +74,9 @@ export default function Home() {
             playsInline
             preload="metadata"
             poster="/assets/hero-poster.jpg"
+            aria-hidden="true"
           >
-            <source src="/assets/hero-video.webm" type="video/webm" />
-            <source src="/assets/hero-video.mp4" type="video/mp4" />
-            <img src={heroImage} alt="Colaboración e innovación en Green^Shift" />
+            <source src="https://drive.google.com/uc?export=download&id=1p1hXGE_1SWKS9hlFAnAn-B4Dw1lCZYpb" type="video/mp4" />
           </video>
           <div className="hero-overlay"></div>
         </div>
