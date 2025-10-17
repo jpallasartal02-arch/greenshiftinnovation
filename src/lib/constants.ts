@@ -1,10 +1,10 @@
 // Global constants for easy editing
 export const SITE_CONFIG = {
   calendlyUrl: "https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1",
-  primaryColor: "#0B3A66",
+  primaryColor: "#1E88E5",
   formEndpoint: "#", // Cambiar al endpoint real (EmailJS, FormSubmit, etc.)
   linkedinUrl: "https://www.linkedin.com/company/greenshift",
-  companyName: "GreenShift",
+  companyName: "Green^Shift",
   companyEmail: "contacto@greenshift.com",
   pricing: {
     basePrice: "1.200 €",

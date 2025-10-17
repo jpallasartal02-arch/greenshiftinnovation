@@ -34,7 +34,7 @@ export default function Home() {
     {
       icon: <GitBranch className="h-10 w-10 text-primary" />,
       title: "Equipos internos",
-      description: "Hackathons internos para acelerar la ejecución de proyectos estratégicos.",
+      description: "Dinámicas de innovación abierta internas para acelerar la ejecución de proyectos estratégicos.",
     },
     {
       icon: <Lightbulb className="h-10 w-10 text-primary" />,
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                Hackathons corporativos para acelerar decisiones y resultados
+                Dinámicas de innovación abierta para acelerar decisiones y resultados
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground max-w-xl">
                 Definimos retos, facilitamos equipos y entregamos prototipos accionables en días, no meses.
@@ -127,7 +127,7 @@ export default function Home() {
               Para quién
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Adaptamos nuestros hackathons a las necesidades de tu organización
+              Adaptamos nuestras dinámicas de innovación abierta a las necesidades de tu organización
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -169,36 +169,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Methodology */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Metodología resumida
-            </h2>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              {methodology.map((step, index) => (
-                <div key={index} className="flex items-center gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                      {index + 1}
-                    </div>
-                    <p className="mt-2 text-sm font-medium text-foreground text-center">
-                      {step}
-                    </p>
-                  </div>
-                  {index < methodology.length - 1 && (
-                    <div className="hidden md:block w-8 h-0.5 bg-border"></div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Partners */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
@@ -224,7 +194,7 @@ export default function Home() {
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Explora si un hackathon encaja en tus objetivos empresariales
+            Explora si una dinámica de innovación abierta encaja en tus objetivos empresariales
           </h2>
           <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90">
             <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>

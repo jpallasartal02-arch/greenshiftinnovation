@@ -8,29 +8,29 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* GreenShift Corporate Design System */
+    /* Green^Shift Climathon-inspired Design System */
     --background: 0 0% 100%;
-    --foreground: 207 80% 22%;
+    --foreground: 210 60% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 207 80% 22%;
+    --card-foreground: 210 60% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 207 80% 22%;
+    --popover-foreground: 210 60% 25%;
 
-    /* Navy blue primary */
-    --primary: 207 80% 22%;
+    /* Vibrant blue primary (Climathon-style) */
+    --primary: 207 83% 57%;
     --primary-foreground: 0 0% 100%;
 
-    /* Slate gray secondary */
-    --secondary: 184 7% 34%;
-    --secondary-foreground: 0 0% 100%;
+    /* Cool gray secondary */
+    --secondary: 210 16% 82%;
+    --secondary-foreground: 210 60% 25%;
 
     --muted: 0 0% 96%;
-    --muted-foreground: 184 7% 45%;
+    --muted-foreground: 210 15% 50%;
 
-    /* Green accent */
-    --accent: 150 48% 44%;
+    /* Fresh green accent */
+    --accent: 158 58% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,11 +38,11 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 207 80% 22%;
+    --ring: 207 83% 57%;
 
     --radius: 0.5rem;
 
-    /* Corporate shadows */
+    /* Clean shadows */
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);

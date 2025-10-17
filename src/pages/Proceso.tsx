@@ -26,14 +26,14 @@ export default function Proceso() {
     {
       number: 4,
       icon: <Zap className="h-8 w-8 text-primary-foreground" />,
-      title: "Hackathon",
+      title: "Dinámica de innovación abierta",
       description: "Facilitamos el evento completo: ideación, prototipado rápido, presentación de soluciones y evaluación conjunta con tu equipo.",
     },
     {
       number: 5,
       icon: <TrendingUp className="h-8 w-8 text-primary-foreground" />,
-      title: "Siguientes pasos",
-      description: "Entregamos roadmap de implementación y ofrecemos acompañamiento post-evento para asegurar la ejecución de las iniciativas.",
+      title: "Finalización del proceso",
+      description: "Entregamos un documento con las ideas generadas, reporte de resultados e insights principales del evento.",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function Proceso() {
             Proceso
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nuestra metodología probada en 5 pasos para transformar retos en resultados tangibles.
+            Nuestra metodología probada en 5 pasos para transformar retos en resultados tangibles mediante dinámicas de innovación abierta.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function Proceso() {
             Comenzar con una auditoría gratuita
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Sin coste ni compromiso. Descubre cómo un hackathon puede acelerar tus objetivos.
+            Sin coste ni compromiso. Descubre cómo una dinámica de innovación abierta puede acelerar tus objetivos.
           </p>
           <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90">
             <Link to="/auditoria-gratuita">Solicitar auditoría gratuita</Link>

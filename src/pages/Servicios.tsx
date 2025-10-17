@@ -10,9 +10,8 @@ export default function Servicios() {
     "Agenda completa del evento",
     "Materiales de soporte",
     "Facilitación end-to-end",
-    "Prototipos iniciales",
+    "Plan de prototipos iniciales",
     "Criterios de evaluación",
-    "Plan de acción post-evento",
   ];
 
   const service1Results = [
@@ -42,7 +41,7 @@ export default function Servicios() {
             Servicios
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Diseñamos hackathons corporativos que transforman retos en decisiones. Adaptamos el formato para equipos internos o integrando talento universitario.
+            Diseñamos dinámicas de innovación abierta que transforman retos en decisiones. Adaptamos el formato para equipos internos o integrando talento universitario.
           </p>
         </div>
       </section>
@@ -59,7 +58,7 @@ export default function Servicios() {
                     <Building2 className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-2xl lg:text-3xl">
-                    Hackathon interno para empresas
+                    Dinámicas de innovación abierta internas para empresas
                   </CardTitle>
                 </div>
               </CardHeader>
@@ -105,7 +104,7 @@ export default function Servicios() {
                     <GraduationCap className="h-6 w-6 text-accent" />
                   </div>
                   <CardTitle className="text-2xl lg:text-3xl">
-                    Hackathon con talento universitario
+                    Dinámicas de innovación con talento universitario
                   </CardTitle>
                 </div>
               </CardHeader>
@@ -113,7 +112,7 @@ export default function Servicios() {
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">Qué es</h3>
                   <p className="text-muted-foreground">
-                    Selección e integración de estudiantes de alto potencial para aportar nuevas perspectivas y capacidad técnica a tus retos empresariales.
+                    Combinamos trabajadores de la empresa con jóvenes talentos para aportar nuevas perspectivas y capacidad técnica a tus retos empresariales.
                   </p>
                 </div>
 

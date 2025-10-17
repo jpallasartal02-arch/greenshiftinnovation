@@ -3,28 +3,28 @@ import { Award, Eye, Zap } from "lucide-react";
 
 export default function QuienesSomos() {
   const team = [
-    { name: "Nombre Apellido", role: "Director de Estrategia" },
-    { name: "Nombre Apellido", role: "Facilitador Senior" },
-    { name: "Nombre Apellido", role: "Diseñador de Retos" },
-    { name: "Nombre Apellido", role: "Coordinador de Talento" },
-    { name: "Nombre Apellido", role: "Analista de Resultados" },
+    { name: "Javier Pallás", role: "Director de Relaciones B2B" },
+    { name: "Ida Karkkäinen", role: "Experta en Sostenibilidad" },
+    { name: "Liher Palacio", role: "Experto en Metodología de Innovación Abierta" },
+    { name: "Zoe Grimalt", role: "Experta en Design Thinking" },
+    { name: "Raquel Acosta", role: "Facilitadora y Coordinadora de Talento" },
   ];
 
   const values = [
     {
       icon: <Award className="h-8 w-8 text-accent" />,
-      title: "Rigor",
-      description: "Metodología probada y atención al detalle en cada fase.",
+      title: "Juventud",
+      description: "Energía fresca y perspectivas renovadas en cada proyecto.",
     },
     {
       icon: <Eye className="h-8 w-8 text-accent" />,
-      title: "Claridad",
-      description: "Comunicación transparente y objetivos medibles.",
+      title: "Innovación",
+      description: "Soluciones creativas que desafían el statu quo.",
     },
     {
       icon: <Zap className="h-8 w-8 text-accent" />,
-      title: "Ejecución",
-      description: "Resultados tangibles y seguimiento post-evento.",
+      title: "Disruptividad",
+      description: "Transformación real que genera impacto duradero.",
     },
   ];
 
@@ -37,7 +37,7 @@ export default function QuienesSomos() {
             Nuestro equipo
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Especialistas en diseñar y facilitar hackathons con impacto real.
+            Especialistas en diseñar y facilitar dinámicas de innovación abierta con impacto real.
           </p>
         </div>
       </section>

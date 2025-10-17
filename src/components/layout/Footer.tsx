@@ -10,10 +10,10 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div>
             <Link to="/" className="text-xl font-bold text-primary mb-4 inline-block">
-              {SITE_CONFIG.companyName}
+              Green<sup className="text-sm">Shift</sup>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Hackathons corporativos para acelerar decisiones y resultados.
+              Dinámicas de innovación abierta para acelerar decisiones y resultados.
             </p>
           </div>
 
