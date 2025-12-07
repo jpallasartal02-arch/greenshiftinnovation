@@ -8,29 +8,31 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Green^Shift Design System - Green primary */
+    /* Green^Shift Branding - New Color Palette */
+    /* White: #FFFFFF | Green: #35b44a | Blue: #2b3185 | Black: #000000 */
+    
     --background: 0 0% 100%;
-    --foreground: 210 60% 25%;
+    --foreground: 236 51% 35%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 60% 25%;
+    --card-foreground: 236 51% 35%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 60% 25%;
+    --popover-foreground: 236 51% 35%;
 
-    /* Fresh green primary */
-    --primary: 158 58% 49%;
+    /* Main Green #35b44a */
+    --primary: 130 55% 46%;
     --primary-foreground: 0 0% 100%;
 
-    /* Cool gray secondary */
-    --secondary: 210 16% 82%;
-    --secondary-foreground: 210 60% 25%;
+    /* Blue #2b3185 as secondary */
+    --secondary: 236 51% 35%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
-    --muted-foreground: 210 15% 50%;
+    --muted-foreground: 236 30% 45%;
 
-    /* Vibrant teal accent */
-    --accent: 174 62% 47%;
+    /* Blue as accent */
+    --accent: 236 51% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,7 +40,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 158 58% 49%;
+    --ring: 130 55% 46%;
 
     --radius: 0.5rem;
 
