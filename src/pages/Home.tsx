@@ -197,7 +197,7 @@ export default function Home() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 bg-muted/50 rounded-lg h-24"
+                className="flex items-center justify-center p-4 h-24"
               >
                 <img 
                   src={partner.logo} 
