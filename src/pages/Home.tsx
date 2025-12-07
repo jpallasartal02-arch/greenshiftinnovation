@@ -52,13 +52,13 @@ export default function Home() {
     "Seguimiento",
   ];
 
-  // Placeholder partner logos (editable)
+  // Partner logos
   const partners = [
-    "Partner 1",
-    "Partner 2",
-    "Partner 3",
-    "Partner 4",
-    "Partner 5",
+    { name: "Partner 1", logo: "https://i.imgur.com/qNR6NPF.jpg" },
+    { name: "Partner 2", logo: "https://i.imgur.com/ox4U967.jpg" },
+    { name: "Partner 3", logo: "https://i.imgur.com/CJw96F4.jpg" },
+    { name: "Partner 4", logo: "https://i.imgur.com/5COMx21.jpg" },
+    { name: "Partner 5", logo: "https://i.imgur.com/4tKlK46.jpg" },
   ];
 
   return (
@@ -197,9 +197,13 @@ export default function Home() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-6 bg-muted/50 rounded-lg h-24"
+                className="flex items-center justify-center p-4 bg-muted/50 rounded-lg h-24"
               >
-                <span className="text-sm font-medium text-muted-foreground">{partner}</span>
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name}
+                  className="max-h-16 max-w-full object-contain"
+                />
               </div>
             ))}
           </div>
