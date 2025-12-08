@@ -3,11 +3,11 @@ import { Award, Eye, Zap } from "lucide-react";
 
 export default function QuienesSomos() {
   const team = [
-    { name: "Javier Pallás", role: "Director de Relaciones B2B" },
-    { name: "Ida Karkkäinen", role: "Experta en Sostenibilidad" },
-    { name: "Liher Palacio", role: "Experto en Metodología de Innovación Abierta" },
-    { name: "Zoe Grimalt", role: "Experta en Design Thinking" },
-    { name: "Raquel Acosta", role: "Facilitadora y Coordinadora de Talento" },
+    { name: "Javier Pallás", role: "Director de Relaciones B2B", image: "https://i.imgur.com/fRcJvNk.jpg" },
+    { name: "Ida Karkkäinen", role: "Experta en Sostenibilidad", image: "https://i.imgur.com/WooIbxJ.jpg" },
+    { name: "Liher Palacio", role: "Experto en Metodología de Innovación Abierta", image: "https://i.imgur.com/Bjixg2e.jpg" },
+    { name: "Zoe Grimalt", role: "Experta en Design Thinking", image: "https://i.imgur.com/s4lIlQP.jpg" },
+    { name: "Raquel Acosta", role: "Facilitadora y Coordinadora de Talento", image: "https://i.imgur.com/AEvVTVA.jpg" },
   ];
 
   const values = [
@@ -49,11 +49,12 @@ export default function QuienesSomos() {
             {team.map((member, index) => (
               <Card key={index} className="border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
-                  {/* Placeholder for photo */}
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-muted flex items-center justify-center">
-                    <div className="text-4xl font-bold text-muted-foreground">
-                      {member.name.charAt(0)}
-                    </div>
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-1">
                     {member.name}
