@@ -103,7 +103,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg bg-primary/5">
+            <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-lg">
               <iframe
                 src="https://streamable.com/e/po65at?autoplay=1&muted=1"
                 frameBorder="0"
