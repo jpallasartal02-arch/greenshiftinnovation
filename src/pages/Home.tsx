@@ -104,7 +104,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg bg-primary/5">
-              {/* Espacio reservado para contenido visual adicional si es necesario */}
+              <iframe
+                src="https://streamable.com/e/po65at?autoplay=1&muted=1"
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                title="Video presentación GreenShift"
+              ></iframe>
             </div>
           </div>
         </div>
