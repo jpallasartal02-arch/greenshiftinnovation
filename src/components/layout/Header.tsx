@@ -39,7 +39,7 @@ export const Header = () => {
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="hover:opacity-90 transition-opacity">
-          <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-10" />
+          <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-14" />
         </Link>
 
         {/* Desktop Navigation */}
