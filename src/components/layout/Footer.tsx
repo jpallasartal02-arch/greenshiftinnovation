@@ -10,7 +10,7 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div>
             <Link to="/" className="mb-4 inline-block hover:opacity-90 transition-opacity">
-              <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-8" />
+              <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-12" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               Dinámicas de innovación abierta para acelerar decisiones y resultados.
