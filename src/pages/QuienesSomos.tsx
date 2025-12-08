@@ -36,8 +36,11 @@ export default function QuienesSomos() {
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Nuestro equipo
           </h1>
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Especialistas en diseñar y facilitar dinámicas de innovación abierta con impacto real.
+          </p>
+          <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Somos un equipo multidisciplinar con amplia experiencia aplicando metodologías de innovación en empresas de distintos sectores. Hemos tenido el privilegio de organizar el primer Climathon de Climate-KIC en Asia, consolidando nuestra trayectoria internacional en innovación abierta. Nuestra misión es ayudar a las organizaciones a alcanzar sus objetivos de manera más ágil, conectando talento, ideas y recursos para generar soluciones tangibles.
           </p>
         </div>
       </section>
