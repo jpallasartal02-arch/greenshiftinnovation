@@ -9,8 +9,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div>
-            <Link to="/" className="text-xl font-bold mb-4 inline-block" style={{ color: '#37B884' }}>
-              Green<sup className="text-sm">Shift</sup>
+            <Link to="/" className="mb-4 inline-block hover:opacity-90 transition-opacity">
+              <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-8" />
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               Dinámicas de innovación abierta para acelerar decisiones y resultados.

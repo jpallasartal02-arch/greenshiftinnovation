@@ -38,8 +38,8 @@ export const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold hover:opacity-90 transition-opacity" style={{ color: '#37B884' }}>
-          Green<sup className="text-base">Shift</sup>
+        <Link to="/" className="hover:opacity-90 transition-opacity">
+          <img src="https://i.imgur.com/NjrsR98.png" alt="GreenShift" className="h-10" />
         </Link>
 
         {/* Desktop Navigation */}
