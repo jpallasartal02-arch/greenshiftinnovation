@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   companyName: "Green^Shift",
   companyEmail: "contacto@greenshift.com",
   pricing: {
-    basePrice: "1.200 €",
+    message: "Escríbenos para pedir un presupuesto personalizado",
   },
 } as const;
 

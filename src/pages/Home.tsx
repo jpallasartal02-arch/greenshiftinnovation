@@ -34,13 +34,13 @@ export default function Home() {
   const audiences = [
     {
       icon: <GitBranch className="h-10 w-10 text-primary" />,
-      title: "Equipos internos",
-      description: "Dinámicas de innovación abierta internas para acelerar la ejecución de proyectos estratégicos.",
+      title: "Dinámicas In-In",
+      description: "Equipos 100% internos de la misma institución —empresa, universidad o departamento— trabajando juntos en retos estratégicos con metodologías ágiles.",
     },
     {
       icon: <Lightbulb className="h-10 w-10 text-primary" />,
-      title: "Con talento universitario",
-      description: "Integramos estudiantes seleccionados que aportan nuevas perspectivas.",
+      title: "Dinámicas In-Out",
+      description: "Equipos mixtos que combinan participantes internos con perfiles externos seleccionados, aportando diversidad de perspectivas e ideas frescas a los retos.",
     },
   ];
 
@@ -143,14 +143,14 @@ export default function Home() {
       </section>
 
       {/* For Whom */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Para quién
+              Nuestro enfoque de Open Innovation
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Adaptamos nuestras dinámicas de innovación abierta a las necesidades de tu organización
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Trabajamos tanto con talento interno como con perfiles externos para enriquecer los retos de innovación y generar soluciones de alto impacto.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -188,6 +188,28 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://i.imgur.com/0PX4us2.jpg" 
+                alt="Dinámica de innovación colaborativa"
+                className="w-full h-72 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://i.imgur.com/vxw7htu.jpg" 
+                alt="Sesión de trabajo en equipo"
+                className="w-full h-72 object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

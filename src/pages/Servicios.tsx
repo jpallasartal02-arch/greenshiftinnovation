@@ -35,7 +35,7 @@ export default function Servicios() {
   return (
     <div className="w-full">
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary/5 to-background py-20">
+      <section className="bg-background py-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Servicios
@@ -162,9 +162,8 @@ export default function Servicios() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">Precio</h3>
-                  <p className="text-3xl font-bold text-primary mb-2">Desde {SITE_CONFIG.pricing.basePrice}</p>
-                  <p className="text-sm text-muted-foreground">
-                    El precio final depende de la duración, formato y personalización requerida.
+                  <p className="text-lg text-muted-foreground">
+                    {SITE_CONFIG.pricing.message}
                   </p>
                 </div>
               </CardContent>
