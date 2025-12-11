@@ -31,7 +31,7 @@ export default function QuienesSomos() {
   return (
     <div className="w-full">
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary/5 to-background py-20">
+      <section className="bg-background py-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Nuestro equipo
@@ -42,6 +42,28 @@ export default function QuienesSomos() {
           <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Somos un equipo multidisciplinar con amplia experiencia aplicando metodologías de innovación en empresas de distintos sectores. Hemos tenido el privilegio de organizar el primer Climathon de Climate-KIC en Asia, consolidando nuestra trayectoria internacional en innovación abierta. Nuestra misión es ayudar a las organizaciones a alcanzar sus objetivos de manera más ágil, conectando talento, ideas y recursos para generar soluciones tangibles.
           </p>
+        </div>
+      </section>
+
+      {/* Team Images Gallery */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://i.imgur.com/kHtjo1k.jpg" 
+                alt="Equipo GreenShift en acción"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://i.imgur.com/WTsco2L.jpg" 
+                alt="Sesión de innovación colaborativa"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
