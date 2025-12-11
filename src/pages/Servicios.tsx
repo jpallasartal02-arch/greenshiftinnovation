@@ -145,13 +145,13 @@ export default function Servicios() {
         </div>
       </section>
 
-      {/* Format & Price */}
+      {/* Format */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <Card className="border-border">
               <CardHeader>
-                <CardTitle className="text-3xl text-center">Formato y precio</CardTitle>
+                <CardTitle className="text-3xl text-center">Formato</CardTitle>
               </CardHeader>
               <CardContent className="p-8 space-y-6 text-center">
                 <div>
@@ -161,7 +161,6 @@ export default function Servicios() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Precio</h3>
                   <p className="text-lg text-muted-foreground">
                     {SITE_CONFIG.pricing.message}
                   </p>
