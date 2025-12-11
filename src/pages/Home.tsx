@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Zap, Target, Users, TrendingUp, GitBranch, Lightbulb } from "lucide-react";
-import heroImage from "@/assets/hero-home.jpg";
-import "@/styles/hero-video.css";
+import { Check, Zap, Target, TrendingUp, GitBranch, Lightbulb } from "lucide-react";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 export default function Home() {
   const benefits = [
@@ -44,14 +43,6 @@ export default function Home() {
     },
   ];
 
-  const methodology = [
-    "Auditoría",
-    "Retos",
-    "Diseño",
-    "Hackathon",
-    "Seguimiento",
-  ];
-
   // Partner logos
   const partners = [
     { name: "Partner 1", logo: "https://i.imgur.com/qNR6NPF.jpg" },
@@ -64,28 +55,15 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="hero relative overflow-hidden py-20 lg:py-32">
-        <div className="hero-media">
-          <video
-            className="hero-video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-hidden="true"
-          >
-            <source src="/hero-video.mp4" type="video/mp4" />
-          </video>
-          <div className="hero-overlay"></div>
-        </div>
-        <div className="hero-content container mx-auto px-4 lg:px-8 relative z-10">
+      <section className="relative overflow-hidden py-20 lg:py-32 min-h-[600px]">
+        <HeroSlideshow />
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
                 Dinámicas de innovación abierta para acelerar decisiones y resultados
               </h1>
-              <p className="text-lg lg:text-xl text-muted-foreground max-w-xl">
+              <p className="text-lg lg:text-xl text-white/90 max-w-xl">
                 Definimos retos, facilitamos equipos y entregamos prototipos accionables en días, no meses.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -98,7 +76,7 @@ export default function Home() {
                 }}>
                   Solicitar auditoría gratuita
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/20">
                   <Link to="/servicios">Ver servicios</Link>
                 </Button>
               </div>

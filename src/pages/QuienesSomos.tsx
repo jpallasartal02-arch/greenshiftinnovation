@@ -45,27 +45,6 @@ export default function QuienesSomos() {
         </div>
       </section>
 
-      {/* Team Images Gallery */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src="https://i.imgur.com/kHtjo1k.jpg" 
-                alt="Equipo GreenShift en acción"
-                className="w-full h-64 object-cover"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src="https://i.imgur.com/WTsco2L.jpg" 
-                alt="Sesión de innovación colaborativa"
-                className="w-full h-64 object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Team Grid */}
       <section className="py-20 bg-background">
