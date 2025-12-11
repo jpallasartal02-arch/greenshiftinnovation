@@ -58,7 +58,7 @@ export default function Home() {
       <section className="relative overflow-hidden py-20 lg:py-32 min-h-[600px]">
         <HeroSlideshow />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
                 Dinámicas de innovación abierta para acelerar decisiones y resultados
@@ -76,20 +76,10 @@ export default function Home() {
                 }}>
                   Solicitar auditoría gratuita
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/20">
+                <Button asChild variant="outline" size="lg" className="bg-transparent border-gray-300 text-gray-300 hover:border-gray-100 hover:text-white hover:bg-transparent">
                   <Link to="/servicios">Ver servicios</Link>
                 </Button>
               </div>
-            </div>
-            <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-lg">
-              <iframe
-                src="https://streamable.com/e/po65at?autoplay=1&muted=1"
-                frameBorder="0"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-                title="Video presentación GreenShift"
-              ></iframe>
             </div>
           </div>
         </div>
