@@ -8,9 +8,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { SITE_CONFIG } from "@/lib/constants";
 import { Mail, Linkedin, GraduationCap } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 export default function Contacto() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,42 +29,88 @@ export default function Contacto() {
     availability: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    console.log("Contact form submitted:", formData);
-    
-    toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarnos. Te responderemos en 1–2 días laborables.",
-    });
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          type: 'business',
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+        },
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      message: "",
-    });
+      if (error) throw error;
+
+      toast({
+        title: "Mensaje enviado",
+        description: "Gracias por contactarnos. Te responderemos en 1–2 días laborables.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error",
+        description: "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleEducationSubmit = (e: React.FormEvent) => {
+  const handleEducationSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    console.log("Education form submitted:", educationFormData);
-    
-    toast({
-      title: "Solicitud enviada",
-      description: "Gracias por tu interés. Te contactaremos pronto con más información.",
-    });
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          type: 'education',
+          name: educationFormData.name,
+          email: educationFormData.email,
+          location: educationFormData.location,
+          studyArea: educationFormData.studyArea,
+          motivation: educationFormData.motivation,
+          availability: educationFormData.availability,
+        },
+      });
 
-    setEducationFormData({
-      name: "",
-      email: "",
-      location: "",
-      studyArea: "",
-      motivation: "",
-      availability: "",
-    });
+      if (error) throw error;
+
+      toast({
+        title: "Solicitud enviada",
+        description: "Gracias por tu interés. Te contactaremos pronto con más información.",
+      });
+
+      setEducationFormData({
+        name: "",
+        email: "",
+        location: "",
+        studyArea: "",
+        motivation: "",
+        availability: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error",
+        description: "No se pudo enviar la solicitud. Por favor, inténtalo de nuevo.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -142,8 +190,8 @@ export default function Contacto() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    Enviar mensaje
+                  <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                   </Button>
                 </form>
               </CardContent>
@@ -240,8 +288,8 @@ export default function Contacto() {
                     </Select>
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    Quiero participar
+                  <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Enviando..." : "Quiero participar"}
                   </Button>
                 </form>
               </CardContent>
