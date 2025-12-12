@@ -70,11 +70,11 @@ export default function Contacto() {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary/5 to-background py-20">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Contacto
           </h1>
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Cuéntanos tu caso. Te responderemos en 1–2 días laborables.
+          <p className="text-sm text-muted-foreground">
+            Respondemos en 1–2 días laborables
           </p>
         </div>
       </section>
