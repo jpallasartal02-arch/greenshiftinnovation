@@ -1,14 +1,8 @@
-import { Mail, Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone } from "lucide-react";
 
 export const ContactSection = () => {
   const email = "info@greenshiftinnovation.com";
   const phone = "621 206 660";
-  const whatsappNumber = "34621206660";
-
-  const openWhatsApp = () => {
-    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
-  };
 
   return (
     <section id="contacto" className="py-20 bg-muted/30">
@@ -18,7 +12,7 @@ export const ContactSection = () => {
             Contacto
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            ¿Tienes un reto de innovación? Escríbenos o llámanos.
+            ¿Tienes un reto de innovación? ¿O quieres venir como participante a uno de nuestros hackathons? Escríbenos o llámanos.
           </p>
         </div>
 
@@ -55,18 +49,6 @@ export const ContactSection = () => {
                 </p>
               </div>
             </a>
-
-            {/* WhatsApp Button */}
-            <div className="pt-4">
-              <Button
-                onClick={openWhatsApp}
-                size="lg"
-                className="w-full gap-3"
-              >
-                <MessageCircle className="h-5 w-5" />
-                Escríbenos por WhatsApp
-              </Button>
-            </div>
           </div>
         </div>
       </div>
