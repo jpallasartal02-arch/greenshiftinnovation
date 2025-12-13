@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Zap, Target, TrendingUp, GitBranch, Lightbulb } from "lucide-react";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
   const benefits = [
@@ -52,6 +53,13 @@ export default function Home() {
     { name: "Partner 5", logo: "https://i.imgur.com/4tKlK46.jpg" },
   ];
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contacto");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -67,13 +75,7 @@ export default function Home() {
                 Definimos retos, facilitamos equipos y entregamos prototipos accionables en días, no meses.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).Calendly) {
-                    (window as any).Calendly.initPopupWidget({ 
-                      url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
-                    });
-                  }
-                }}>
+                <Button size="lg" onClick={scrollToContact}>
                   Solicitar auditoría gratuita
                 </Button>
                 <Button asChild variant="outline" size="lg" className="bg-transparent border-gray-300 text-gray-300 hover:border-gray-100 hover:text-white hover:bg-transparent">
@@ -207,6 +209,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <ContactSection />
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 lg:px-8 text-center">
@@ -217,13 +222,7 @@ export default function Home() {
             size="lg" 
             variant="outline" 
             className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90"
-            onClick={() => {
-              if (typeof window !== 'undefined' && (window as any).Calendly) {
-                (window as any).Calendly.initPopupWidget({ 
-                  url: `https://calendly.com/TU_USUARIO/TU_EVENTO?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=37B884` 
-                });
-              }
-            }}
+            onClick={scrollToContact}
           >
             Solicitar auditoría gratuita
           </Button>
