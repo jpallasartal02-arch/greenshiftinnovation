@@ -1,36 +1,28 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { NAVIGATION_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { Linkedin, Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    const link = document.createElement('link');
-    link.href = 'https://assets.calendly.com/assets/external/widget.css';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-
-    return () => {
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
-  }, []);
-
-  const openCalendlyPopup = () => {
-    if (typeof window !== 'undefined' && (window as any).Calendly) {
-      const primaryColorHex = SITE_CONFIG.primaryColor.replace('#', '');
-      (window as any).Calendly.initPopupWidget({ 
-        url: `${SITE_CONFIG.calendlyUrl}&primary_color=${primaryColorHex}` 
-      });
+  const scrollToContact = () => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const contactSection = document.getElementById("contacto");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const contactSection = document.getElementById("contacto");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -68,7 +60,7 @@ export const Header = () => {
           >
             <Linkedin className="h-5 w-5" />
           </a>
-          <Button size="default" onClick={openCalendlyPopup}>
+          <Button size="default" onClick={scrollToContact}>
             Solicitar auditoría gratuita
           </Button>
         </div>
@@ -114,7 +106,7 @@ export const Header = () => {
                 className="flex-1"
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  openCalendlyPopup();
+                  scrollToContact();
                 }}
               >
                 Solicitar auditoría gratuita
