@@ -19,7 +19,7 @@ export const NAVIGATION_LINKS = [
 ] as const;
 
 export const LEGAL_LINKS = [
-  { name: "Aviso Legal", href: "/aviso-legal" },
-  { name: "Política de Privacidad", href: "/politica-privacidad" },
-  { name: "Cookies", href: "/politica-cookies" },
+  { name: "Aviso Legal", href: "/legal/aviso-legal.pdf" },
+  { name: "Política de Privacidad", href: "/legal/politica-privacidad.pdf" },
+  { name: "Cookies", href: "/legal/politica-cookies.pdf" },
 ] as const;

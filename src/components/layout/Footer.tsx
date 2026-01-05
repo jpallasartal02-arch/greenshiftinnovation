@@ -50,12 +50,14 @@ export const Footer = () => {
             <ul className="space-y-2">
               {LEGAL_LINKS.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
